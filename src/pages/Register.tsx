@@ -14,7 +14,7 @@ interface IFormInput {
 
 async function registerUser(data: any): Promise<{ responseCode: number; responseData: any }> {
     try {
-        const response = await fetch('https://ff-drive-ldk96rxj3-juanu2s-projects.vercel.app/register', {
+        const response = await fetch('https://ff-drive-be.vercel.app/register', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
