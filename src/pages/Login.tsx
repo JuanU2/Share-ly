@@ -7,7 +7,7 @@ export default function Login() {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
-  const handleLogin = async (e) => {
+  const handleLogin = async (e: any) => {
     e.preventDefault(); // Prevent the default form submission
 
     // Payload to be sent in POST request
