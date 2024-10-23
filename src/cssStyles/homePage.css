@@ -1,0 +1,72 @@
+@font-face {
+    font-family: web-font;
+    src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+*, *::before, *::after
+{
+    box-sizing: border-box;
+}
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: web-font;
+    text-decoration: none;
+}
+
+.layout {
+    min-height: 100vh;
+    display: flex;
+    background-color: rgb(75 85 99);
+    flex-direction: column;
+}
+
+.reservation__block {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 2rem;
+    border-radius: 1rem;
+    justify-content: center;
+    gap: 1rem;
+    background-color: rgba(37, 28, 28, 0.637);
+}
+
+body
+{
+    background-color: rgba(250, 250, 250, 0.795);
+}
+
+.reservation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+.headline {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .reservation__block {
+        width: 100%;
+        background: rgba(128, 128, 128, 0.555);
+    }
+    .reservation {
+        flex-direction: column;
+    }
+}
